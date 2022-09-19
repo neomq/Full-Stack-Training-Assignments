@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+    color: #334149;
+}
+
+.page-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* getapi */
+
+.user-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-info h5,
+.user-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.user-info {
+    letter-spacing: 0.2px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info p {
+    color: #7D8F9A;
+    font-weight: 300;
+}
+
+.avatar {
+    padding: 30px 10px;
+}
+
+.avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.error {
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    color: #7d8f9a;
+}
+
+/* postapi */
+
+.error-msg {
+    color: #ed3850;
+}
+
+.result-card {
+    border: none;
+    border-radius: 14px;
+    background-color: #ffffff;
+    letter-spacing: 0.2px;
+}
+
+.result-card h6 {
+    color: #7d8f9a;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #7d8f9aa4;
+    font-weight: 300;
+}
