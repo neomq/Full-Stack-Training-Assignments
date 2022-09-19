@@ -13,7 +13,8 @@ body {
     height: 100vh;
 }
 
-.calculator {
+.calculator,
+.timebox {
     width: 350px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 40px;
@@ -37,4 +38,8 @@ button {
     background-color: #7877FC !important;
     border: none !important;
     letter-spacing: 0.3px;
+}
+
+.timebox .display {
+    height: 80px;
 }
