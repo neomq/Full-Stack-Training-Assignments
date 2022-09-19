@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Assignment</title>
+
+    <style>
+        /* 1. text-align */
+        .text-align p {
+            padding: 10px;
+            margin: 5px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .text-align .left {
+            text-align: left;
+        }
+
+        .text-align .center {
+            text-align: center;
+        }
+
+        .text-align .right {
+            text-align: right;
+        }
+
+        /* 2. Float */
+        .float {
+            margin: 5px;
+            text-align: center;
+        }
+
+        .float-left {
+            float: left;
+            padding: 10px;
+            background-color: rgb(215, 215, 215);
+        }
+
+        .float-right {
+            float: right;
+            padding: 10px;
+            background-color: rgb(173, 173, 173);
+        }
+
+        .float-center {
+            float: center;
+            padding: 10px;
+            background-color: rgb(197, 197, 197);
+        }
+
+        /* 3. Display */
+        .block div {
+            display: block;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .inline-block div {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .inline {
+            margin: 80px 0;
+        }
+
+        .inline div {
+            display: inline;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .inline .one {
+            padding-top: 50px;
+        }
+
+        .inline .two {
+            padding: 40px 10px;
+        }
+
+        .inline .three {
+            padding-bottom: 30px;
+        }
+
+        /* 3. Height & width */
+        .height-width {
+            height: 100px;
+            background-color: rgb(238, 238, 238);
+            width: 200px;
+            padding: 10px;
+        }
+
+        /* 5. Colour */
+        .color .red {
+            color: red;
+        }
+
+        .color .blue {
+            color: rgb(69, 119, 197);
+        }
+
+        .color .green {
+            color: green;
+        }
+
+        /* 5. Background Colour */
+        .bg-color div {
+            display: inline-block;
+            padding: 30px;
+            width: 100px;
+        }
+
+        .bg-color .bg-red {
+            background-color: rgb(230, 65, 43);
+        }
+
+        .bg-color .bg-blue {
+            background-color: rgb(37, 121, 232);
+        }
+
+        .bg-color .bg-green {
+            background-color: rgb(51, 151, 51);
+        }
+
+        /* 6. Margin */
+        .margin {
+            border: 1px solid gray;
+            width: 300px;
+            margin: 5px;
+        }
+
+        .margin-all {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .margin-top {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .margin-bottom {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .margin-left {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        .margin-right {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        /* 6. Padding */
+        .padding {
+            border: 1px solid gray;
+            width: 300px;
+            margin: 5px;
+        }
+
+        .padding div p {
+            background-color: rgb(211, 211, 211);
+            margin: 0;
+        }
+
+        .padding-all {
+            background-color: rgb(243, 243, 243);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .padding-top {
+            background-color: rgb(238, 238, 238);
+            padding-top: 20px;
+            margin: 20px;
+        }
+
+        .padding-bottom {
+            background-color: rgb(238, 238, 238);
+            padding-bottom: 20px;
+            margin: 20px;
+        }
+
+        .padding-left {
+            background-color: rgb(238, 238, 238);
+            padding-left: 20px;
+            margin: 20px;
+        }
+
+        .padding-right {
+            background-color: rgb(238, 238, 238);
+            padding-right: 20px;
+            margin: 20px;
+        }
+
+        /* 8. Border */
+        .border {
+            padding: 30px;
+            width: 300px;
+            border: 3px solid gray;
+        }
+
+        /* 9. Text Decoration */
+        .overline {
+            text-decoration: overline;
+        }
+        .linethrough {
+            text-decoration: underline;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* 10. Position */
+        .relative {
+            position: relative;
+            margin-bottom: 80px;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(238, 238, 238);
+        } 
+        .absolute {
+            position: absolute;
+            margin-top: 50px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(201, 201, 201);
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 0px;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgb(147, 147, 147);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>1. Text Alignment</h2>
+    <div class="text-align">
+        <p class="left">text align left</p>
+        <p class="center">text align center</p>
+        <p class="right">text align right</p>
+    </div>
+
+    <h2>2. Float</h2>
+    <div class="float">
+        <div class="float-left">Float left</div>
+        <div class="float-right">Float right</div>
+        <div class="float-center">Float center</div>
+    </div>
+
+    <h2>3. Display</h2>
+    <h3>Block</h3>
+    <div class="block">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+
+    <h3>Inline block</h3>
+    <div class="inline-block">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+
+    <h3>Inline</h3>
+    <div class="inline">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+    </div>
+
+    <h2>4. Height & Width</h2>
+    <div class="height-width">
+        <p>Height: 100px<br />Width: 200px</p>
+    </div>
+
+    <h2>5. Colour</h2>
+    <div class="color">
+        <p class="red">This text is red</p>
+        <p class="blue">This text is blue</p>
+        <p class="green">This text is green</p>
+    </div>
+
+    <h2>5. Background Colour</h2>
+    <div class="bg-color">
+        <div class="bg-red">Background colour: Red</div>
+        <div class="bg-blue">Background colour: Blue</div>
+        <div class="bg-green">Background colour: Green</div>
+    </div>
+
+    <h2>6. Margin</h2>
+    <div class="margin">
+        <div class="margin-all">margin: 20px</div>
+    </div>
+    <div class="margin">
+        <div class="margin-top">margin-top: 20px</div>
+    </div>
+    <div class="margin">
+        <div class="margin-bottom">margin-bottom: 20px</div>
+    </div>
+    <div class="margin">
+        <div class="margin-left">margin-left: 20px</div>
+    </div>
+    <div class="margin">
+        <div class="margin-right">margin-right: 20px</div>
+    </div>
+
+    <h2>7. Padding</h2>
+    <div class="padding">
+        <div class="padding-all">
+            <p>padding: 20px</p>
+        </div>
+    </div>
+    <div class="padding">
+        <div class="padding-top">
+            <p>padding-top: 20px</p>
+        </div>
+    </div>
+    <div class="padding">
+        <div class="padding-bottom">
+            <p>padding-bottom: 20px</p>
+        </div>
+    </div>
+    <div class="padding">
+        <div class="padding-left">
+            <p>padding-left: 20px</p>
+        </div>
+    </div>
+    <div class="padding">
+        <div class="padding-right">
+            <p>padding-right: 20px</p>
+        </div>
+    </div>
+
+    <h2>8. Border</h2>
+    <div class="border">Border 3px solid gray</div>
+
+    <h2>9. Text Decoration</h2>
+    <div>
+        <p class="overline">This is an overline</p>
+        <p class="linethrough">This is a line-through</p>
+        <p class="underline">This is an underline</p>
+    </div>
+
+    <h2>10. Position</h2>
+    <div class="relative">This div has relative position
+        <div class="absolute">This div has absolute position</div>
+    </div>
+    <div class="fixed">This div has fixed position</div>
+
+</body>
+
+</html>
