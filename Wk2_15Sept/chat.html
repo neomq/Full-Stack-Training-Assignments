@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript">
+        let chatMessages = [];
+        let user = {};
+
+        function sendMessage() {
+
+            let username = document.getElementById("name-input").value;
+            let msgInput = document.getElementById("msg-input").value;
+
+            if (username == "" && msgInput == ""){
+                return;
+            }
+
+            // push object into array
+            chatMessages.push({username: username, message: msgInput});
+            console.log(chatMessages);
+
+            // display in message window
+            let newMessage = "";
+            let user = "";
+            for (m in chatMessages){
+                user = chatMessages[m].username;
+                newMessage = chatMessages[m].message;
+            }
+
+            let messageList = document.getElementById("message-list");
+            let messageContent = document.createElement('div');
+            messageContent.className = "message";
+
+            let messageName = document.createElement('div');
+            messageName.className = "message-name";
+
+            let messageText = document.createElement('div');
+            messageText.className = "message-text";
+            
+            messageName.innerHTML = user;
+            messageText.innerHTML = newMessage;
+
+            messageContent.appendChild(messageName);
+            messageContent.appendChild(messageText);
+            messageList.appendChild(messageContent);
+
+            // clear input field
+            document.getElementById("name-input").value = '';
+            document.getElementById("msg-input").value = '';
+
+            let messageScreen = document.querySelector('.message-box');
+            messageScreen.scrollTop = messageScreen.scrollHeight;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row d-flex align-items-center justify-content-center chat-section">
+            <div class="col-6 m-0 p-0 d-flex flex-column chat-container py-5">
+
+                    <div class="message-box" id="message-list">
+                    </div>
+
+                    <div class="row d-flex text-box shadow-sm rounded-4 p-3">
+                        <div class="col-3 p-1">
+                            <input class="form-control" id="name-input" type="text" placeholder="Name" aria-label="default input example">
+                        </div>
+                        <div class="col-8 p-1 message-input">
+                            <input class="form-control" id="msg-input" type="text" placeholder="Type a message" aria-label="default input example">
+                        </div>
+                        <div class="col-1 p-1 send-btn">
+                            <button class="btn btn-primary" onclick="sendMessage()" id="send-btn" type="button">Send</button>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
