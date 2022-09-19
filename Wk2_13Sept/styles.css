@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECECEC;
+}
+
+.img {
+    height: 100vh;
+    background: linear-gradient(#3b342e23, #3B342E23), url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.form .header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #3C342E;
+}
+
+.form .header p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    color: #3C342E;
+}
+
+.form .custom-input {
+    border: none;
+    background-color: #DFDDDB;
+    box-shadow: none !important;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.form .form-floating label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.form-check label {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.submit-btn button {
+    border: none;
+    background-color: #3C342E;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    padding: 13px 0px;
+}
+
+.submit-btn button:hover {
+    background-color: #26201c !important;
+}
+
+.form .small-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+    color: #3C342E;
+}
+
+.form .small-text a {
+    font-weight: 400;
+    color: #3C342E;
+}
+
+input:checked {
+    background-color: #3C342E !important;
+    box-shadow: none !important;
+}
+
+input,
+input:focus {
+    box-shadow: none !important;
+    border: 1px solid #3c342e2b !important;
+}

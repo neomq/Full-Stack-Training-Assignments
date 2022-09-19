@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects & Arrays</title>
+
+    <script>
+        // Question 1
+        let fruits = []; // empty array
+
+        function arrayAdd (fruit){
+            return fruits.push(fruit);
+        }
+
+        console.log(fruits.push("orange"));
+        console.log(fruits.push("apple"));
+        console.log(fruits.push("pear"));
+        console.log(fruits);
+
+        // Question 2
+        function myObject () {
+            return object  = [
+            {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 35,
+                occupation: 'driver',
+                country: 'Singapore'
+            },
+            {
+                firstname: 'Billy',
+                lastname: 'Lee',
+                age: 30,
+                occupation: 'engineer',
+                country: 'Singapore'
+            },
+            {
+                firstname: 'Kenny',
+                lastname: 'Wong',
+                age: 42,
+                occupation: 'architect',
+                country: 'Malaysia'
+            }
+            ]
+        }
+        let persons = myObject();
+        for (let person in persons){
+            //console.log(persons[person])
+            for (let info in persons[person]){
+                console.log(info + ": " + persons[person][info])
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
