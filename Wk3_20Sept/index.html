@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+ 
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function setLocal(){
+            let key = document.getElementById("local-key").value;
+            let val = document.getElementById("local-val").value;
+            localStorage.setItem(key,val);
+        }
+        function getLocal(){
+            let key = document.getElementById("get-local-key").value;
+            console.log(`value of ${key} in local storage is: ${localStorage.getItem(key)}`);
+        }
+
+        function setSession(){
+            let key = document.getElementById("session-key").value;
+            let val = document.getElementById("session-val").value;
+
+            sessionStorage.setItem(key,val);
+        }
+        function getSession(){ 
+            let key = document.getElementById("get-session-key").value;               
+            console.log(`value of ${key} in session storage is: ${sessionStorage.getItem(key)}`);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="row justify-content-center mt-5">
+        <div class="section col-3 px-4">
+            <h3 class="text-center mb-4">Set Local Storage</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control mb-3" id="local-key" placeholder="Enter Key"
+                    aria-describedby="basic-addon1">
+                <input type="text" class="form-control mb-3 " id="local-val" placeholder="Enter Value"
+                    aria-describedby="basic-addon1">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary mb-3" onclick="setLocal()">Set Local Storage</button>
+                </div>
+            </div>
+            <hr>
+            <h3 class="text-center mt-4 mb-4">Get Local Storage</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control mb-3" id="get-local-key" placeholder="Enter Key"
+                    aria-describedby="basic-addon1">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-outline-primary mb-3" onclick="getLocal()">Get Local
+                        Storage</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section col-3 px-4">
+            <h3 class="text-center mb-4">Set Session Storage</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control mb-3" id="session-key" placeholder="Enter Key" aria-describedby="basic-addon1">
+                <input type="text" class="form-control mb-3" id="session-val" placeholder="Enter Value" aria-describedby="basic-addon1">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-success mb-3" onclick="setSession()">Set Session Storage</button>
+                </div>
+            </div>
+            <hr>
+            <h3 class="text-center mt-4 mb-4">Get Session Storage</h3>
+            <div class="mb-3">
+                <input type="text" class="form-control mb-3" id="get-session-key" placeholder="Enter Key" aria-describedby="basic-addon1">
+                <div class="d-grid">
+                    <button type="button" class="btn btn-outline-success mb-3" onclick="getSession()">Get Session Storage</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
