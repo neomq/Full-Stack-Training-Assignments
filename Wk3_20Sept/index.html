@@ -21,21 +21,40 @@
             let key = document.getElementById("local-key").value;
             let val = document.getElementById("local-val").value;
             localStorage.setItem(key,val);
+
+            alert(`key: ${key} and value: ${val} successfully stored in local storage`);
+
+            // clear input
+            document.getElementById("local-key").value = "";
+            document.getElementById("local-val").value = "";
         }
+
         function getLocal(){
             let key = document.getElementById("get-local-key").value;
             console.log(`value of ${key} in local storage is: ${localStorage.getItem(key)}`);
+
+            // clear input
+            document.getElementById("get-local-key").value = "";
         }
 
         function setSession(){
             let key = document.getElementById("session-key").value;
             let val = document.getElementById("session-val").value;
-
             sessionStorage.setItem(key,val);
+
+            alert(`key: ${key} and value: ${val} successfully stored in session storage`);
+
+            // clear input
+            document.getElementById("session-key").value = "";
+            document.getElementById("session-val").value = "";
         }
+
         function getSession(){ 
             let key = document.getElementById("get-session-key").value;               
             console.log(`value of ${key} in session storage is: ${sessionStorage.getItem(key)}`);
+
+            // clear input
+            document.getElementById("get-session-key").value = "";
         }
     </script>
     <title>Document</title>
