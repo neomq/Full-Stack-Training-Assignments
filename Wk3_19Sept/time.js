@@ -1,10 +1,5 @@
-let d = new Date();//createign object for date.
-//console.log(d);
-console.log(d.getFullYear() + " " + d.getDate() + " " + d.getMonth());
-console.log(d.getHours() + " " + d.getMinutes() + " " + d.getSeconds());
-console.log(d.getDay())
 setInterval(() => {
-    let d = new Date();//createign object for date.
+    let d = new Date();
     let hours = d.getHours();
     let mins = d.getMinutes();
     let seconds = d.getSeconds();
