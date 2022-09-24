@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-items {
+    padding: 0 20px;
+}
+
+.nav-items li {
+    display: inline-block;
+    margin: 30px;
+}
