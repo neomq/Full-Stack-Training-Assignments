@@ -23,7 +23,7 @@ function Conditional() {
                     <ol className="list-group list-group-numbered">
                         {
                             people.map((person, idx) => {
-                                return <li className="p-4 list-group-item bg-light d-flex justify-content-between align-items-start">
+                                return <li className="p-4 list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className={person.age > 50 ? 'red fw-bold' : null}>{person.name}</div>
                                         <div className={person.age > 50 ? 'red' : null}>{person.age} years old</div>
