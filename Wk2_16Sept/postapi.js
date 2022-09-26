@@ -12,7 +12,6 @@ function postUser() {
 
     // clear error msg (if any)
     errorMsg.innerHTML = "";
-
     if (name == "" || job == ""){
         errorMsg.innerHTML = `<p class="error-msg mb-0 px-2">Please enter name and job.</p>`;
     } else {

@@ -1,0 +1,26 @@
+.sidebar {
+    width: 300px;
+    height: 100vh;
+}
+
+.nav-link {
+    padding: 12px 20px;
+}
+
+.page {
+    background-color: #F2F2F2;
+}
+
+input {
+    border: none !important;
+    padding: 10px 16px !important;
+}
+
+.display {
+    height: 460px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
