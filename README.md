@@ -1,2 +1,2 @@
 # Full-Stack-Training-Assignments
- HTML/CSS & Javascript Assignments (Sep 2022)
+ GECO full stack training assignments (Sep - Oct 2022)
