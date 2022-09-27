@@ -20,7 +20,7 @@ function Postapi() {
     
     const postApi = () => {
         // validation
-        if (name == "" || job == ""){
+        if (name === "" || job === ""){
             setError(true);
         } else {
             // clear error message

@@ -1,5 +1,5 @@
 import Sidebar from './Sidebar';
-import React, { Component, useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const API_BASE_URL = "https://reqres.in/api/users";
 
@@ -64,7 +64,7 @@ function Getapi() {
                                             <div className="modal-content p-3 rounded-4">
                                                 <div className="modal-body d-flex">
                                                     <div>
-                                                        <img className="rounded-pill me-3" src={avatar}></img>
+                                                        <img className="rounded-pill me-3" alt="#" src={avatar}/>
                                                     </div>
                                                     <div className="d-flex flex-column justify-content-center">
                                                         <h5 className="mb-1">{fname} {lname}</h5>
