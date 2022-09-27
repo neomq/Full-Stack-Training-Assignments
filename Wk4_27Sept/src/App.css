@@ -1,0 +1,53 @@
+.page {
+  height: 100vh;
+  background-color: #F2F2F2;
+}
+
+.page-heading {
+  font-size: 50px;
+  letter-spacing: .03em;
+  font-weight: 300;
+}
+
+.sidebar {
+  width: 300px;
+  height: 90vh;
+}
+
+input {
+  border: none !important;
+  padding: 10px 16px !important;
+}
+
+.btn-close:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+/* .custom-btn {
+  background-color: #3339A5 !important;
+  border: none;
+} */
+
+.custom-alert {
+  background-color: #009B89;
+  color: #FFFFFF;
+}
+
+.custom-alert-error {
+  background-color: #DC3545;
+  color: #FFFFFF;
+}
+
+.error-text {
+  color: #f33044;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.display {
+  height: 460px;
+}
