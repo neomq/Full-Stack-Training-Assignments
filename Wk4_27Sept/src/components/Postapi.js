@@ -68,7 +68,7 @@ class Postapi extends React.Component{
         return(
             <div className="page d-flex">
                 <div className="p-4">
-                    <Navbar/>
+                    <Navbar activePage="postapi"/>
                 </div>
 
                 <div className="w-100">
@@ -103,7 +103,7 @@ class Postapi extends React.Component{
                             />
                         </div>
                         <div className="col p-0">
-                            <input className="btn btn-primary px-4 custom-btn"
+                            <input className="btn btn-primary px-4"
                                     type="button" 
                                     onClick={this.postApi} 
                                     value="Submit"

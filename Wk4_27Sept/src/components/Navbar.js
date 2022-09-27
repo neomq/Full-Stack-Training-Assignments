@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function Navbar(props) {
 
     return(
         <React.Fragment>
@@ -9,23 +9,23 @@ function Navbar() {
                 <hr />
                 <ul className="nav nav-pills flex-column mb-auto">
                     <li className="nav-item py-2">
-                        <a href="postapi" className="nav-link">
+                        <a href="postapi" className={props.activePage==="postapi"?"nav-link py-3 active":"nav-link py-3"}>
                             Post API
                         </a>
                     </li>
                     <li className="nav-item py-2">
-                        <a href="getapi"className="nav-link">
+                        <a href="getapi" className={props.activePage==="getapi"?"nav-link py-3 active":"nav-link py-3"}>
                             Get API
                         </a>
                     </li>
                     <li className="nav-item py-2">
-                        <a href="conditional" className="nav-link">
+                        <a href="conditional" className={props.activePage==="conditional"?"nav-link py-3 active":"nav-link py-3"}>
                             Conditional CSS
                         </a>
                     </li>
                 </ul>
                 <hr />
-                <a className="btn btn-primary py-2 custom-btn" href="/" role="button">Login</a>
+                <a className="btn btn-primary py-2" href="/" role="button">Login</a>
             </div>
         </React.Fragment>
     )

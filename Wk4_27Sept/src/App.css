@@ -24,13 +24,8 @@ input:focus {
   box-shadow: none !important;
 }
 
-/* .custom-btn {
-  background-color: #3339A5 !important;
-  border: none;
-} */
-
 .custom-alert {
-  background-color: #009B89;
+  background-color: #00bd8b;
   color: #FFFFFF;
 }
 
@@ -56,3 +51,8 @@ img {
   color:#f33044;
 }
 
+.active {
+  background-color: #0e6dfc16 !important;
+  color: #0E6EFC!important;
+  font-weight: 600;
+}

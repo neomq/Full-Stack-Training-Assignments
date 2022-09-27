@@ -50,7 +50,7 @@ class Getapi extends React.Component{
         return(
             <div className="page d-flex">
                 <div className="p-4">
-                    <Navbar/>
+                    <Navbar activePage="getapi"/>
                 </div>
 
                 <div className="w-100">
