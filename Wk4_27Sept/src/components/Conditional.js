@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import People from "./People";
 
 class Conditional extends React.Component{
 
@@ -15,7 +16,7 @@ class Conditional extends React.Component{
 
                 <div className="w-100">
                     <h1 className="page-heading p-5">Conditional</h1>
-              
+                    <People/>
                 </div>
 
             </div>
