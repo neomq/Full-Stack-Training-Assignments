@@ -1,6 +1,16 @@
 import React from "react";
+import { useEffect, useState } from 'react';
 
 function Navbar(props) {
+
+    const [isLoggedIn,setIsLoggedIn] = useState(false);
+    useEffect(() => {
+        if (localStorage.getItem("token") != undefined && localStorage.getItem("token") != '') {
+            setIsLoggedIn(true);
+        } else {
+            setIsLoggedIn(false);
+        }
+    }, [])
 
     return(
         <React.Fragment>
@@ -25,7 +35,10 @@ function Navbar(props) {
                     </li>
                 </ul>
                 <hr />
-                <a className="btn btn-primary py-2" href="/" role="button">Login</a>
+                {isLoggedIn
+                ?<a className="btn btn-primary py-2" href="/" role="button">Logout</a>
+                :<a className="btn btn-primary py-2" href="/" role="button">Login</a>}
+                
             </div>
         </React.Fragment>
     )
