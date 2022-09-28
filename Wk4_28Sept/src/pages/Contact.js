@@ -8,8 +8,8 @@ function Contact() {
 
     return(
         <React.Fragment>
-            <Navbar/>
-            <PageHeader/>
+            <Navbar activePage="contact"/>
+            <PageHeader activePage="contact"/>
             <ContactCtn/>
             <Footer/>
         </React.Fragment>

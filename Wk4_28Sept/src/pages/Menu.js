@@ -8,8 +8,8 @@ function Menu() {
 
     return(
         <React.Fragment>
-            <Navbar/>
-            <PageHeader/>
+            <Navbar activePage="menu"/>
+            <PageHeader activePage="menu"/>
             <MenuCtn/>
             <Footer/>
         </React.Fragment>

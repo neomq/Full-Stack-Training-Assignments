@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
     return(
         <React.Fragment>
-            <Navbar/>
+            <Navbar activePage="home"/>
             <Carousel/>
             <AboutCtn/>
             <ServiceCtn/>

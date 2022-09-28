@@ -8,8 +8,8 @@ function Service() {
 
     return(
         <React.Fragment>
-            <Navbar/>
-            <PageHeader/>
+            <Navbar activePage="service"/>
+            <PageHeader activePage="service"/>
             <ServiceCtn/>
             <Footer/>
         </React.Fragment>

@@ -8,8 +8,8 @@ function About() {
 
     return(
         <React.Fragment>
-            <Navbar/>
-            <PageHeader/>
+            <Navbar activePage="about"/>
+            <PageHeader activePage="about"/>
             <AboutCtn/>
             <Footer/>
         </React.Fragment>

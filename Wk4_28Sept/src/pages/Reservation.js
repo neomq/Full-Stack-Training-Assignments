@@ -8,8 +8,8 @@ function Reservation() {
 
     return(
         <React.Fragment>
-            <Navbar/>
-            <PageHeader/>
+            <Navbar activePage="reservation"/>
+            <PageHeader activePage="reservation"/>
             <ReserveCtn/>
             <Footer/>
         </React.Fragment>
