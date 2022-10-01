@@ -15,7 +15,7 @@ function Header(props) {
     return(
         <React.Fragment>
             <div id="body">
-                <div class="header">
+                <div className="header">
                     <div>
                         <h1>{displayHeaderName()}</h1>
                     </div>
