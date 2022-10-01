@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact"
+import Contact from "./pages/Contact";
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/product" element={<Product/>}/>
           <Route path="/blog" element={<Blog/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/blogpost" element={<BlogPost/>}/>
         </Routes>
       </Router>
     </React.Fragment>
