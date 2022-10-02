@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import BlogPost from './pages/BlogPost';
 
 function App() {
+
   return (
     <React.Fragment>
       <Router>

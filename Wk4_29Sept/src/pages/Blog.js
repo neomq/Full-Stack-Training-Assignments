@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NavLink } from 'react-router-dom';
-// import { useState } from 'react';
 
 function Blog() {
 
@@ -42,7 +41,7 @@ function Blog() {
                                             <h1>{blog.title}</h1>
                                             <span>By {blog.author} on {blog.date}</span>
                                             <p>{blog.short}</p>
-                                            <NavLink to="/blogpost" className="more">Read More</NavLink>
+                                            <NavLink className="more">Read More</NavLink>
                                         </div>
                                     </li>
                                 )

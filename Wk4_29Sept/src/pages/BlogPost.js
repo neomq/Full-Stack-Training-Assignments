@@ -14,12 +14,13 @@ function BlogPost() {
                 <div className="singlepost">
                     <div className="featured">
                         <img src="images/strwberry-delights.jpg" alt="..."/>
-                            <h1>NEW CHILLS FOR SUMMER</h1>
+                            <h1>title</h1>
                             <span>By Admin on November 28, 2023</span>
                             <p>You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the forum.</p>
                             <p>You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the forum.</p>
                             <a href="blog.html" className="load">back to blog</a>
                     </div>
+
                     <div className="sidebar">
                         <h1>Recent Posts</h1>
                         <img src="images/on-diet.png" alt="..."/>
