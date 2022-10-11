@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 
 // const API_BASE_URL = "https://reqres.in/api/users";
-const API_BASE_URL = "http://localhost:8080/users/login";
+const API_BASE_URL = "http://localhost:8080/user/login";
 
 class Postapi extends React.Component{
     constructor(){
