@@ -42,9 +42,9 @@ registerUser = () => {
             <React.Fragment>
                 <Navbar/>
                 
-                <div className="row justify-content-center">
-                    <div className="col-5">
-                        <h1 className="mt-4 py-3 text-center">Register</h1>
+                <div className="row container-fluid justify-content-center">
+                    <div className="form">
+                        <h1 className="text-center mb-4">Register</h1>
                         <div className="form-floating mb-3">
                             <input type="text" 
                                     onChange={(e)=>{
@@ -101,7 +101,7 @@ registerUser = () => {
                                     id="password" placeholder="Password"/>
                                 <label htmlFor="password">Password</label>
                         </div>
-                        <div className="d-grid mt-3">
+                        <div className="d-grid mt-4">
                             <input className="btn btn-primary py-2"
                                         type="button" 
                                         onClick={this.registerUser} 
